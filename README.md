@@ -108,6 +108,13 @@ docker compose up -d
 | Mongo Express       | http://localhost:8081 |
 | Metabase            | http://localhost:3000 |
 
+Docker Compose service names:
+
+* `mongo-service`
+* `mongo-express-service`
+* `jupyter-service`
+* `metabase-service`
+
 ---
 
 ## 🔬 Methodology
