@@ -34,7 +34,7 @@ flowchart LR
     B --> C[Null Handling and Deduplication]
     C --> D[Feature Engineering]
     D --> E[Linear Regression / ML]
-    D --> F[PostgreSQL - Raw, Staging, DW]
+    D --> F[PostgreSQL - Raw, DW, Data Mart]
     F --> G[Data Mart Views]
     G --> H[Metabase Dashboard]
     E --> G
@@ -46,7 +46,7 @@ flowchart LR
 
 * **Python** (Pandas, NumPy, Scikit-learn)
 * **Jupyter Notebook** (EDA, cleaning, feature engineering, modeling)
-* **PostgreSQL** (Raw data, staging, data warehouse, and data marts)
+* **PostgreSQL** (Raw data, dimensional data warehouse, and data marts)
 * **pgAdmin** (Database administration)
 * **Metabase** (Dashboards and KPI analysis)
 * **Docker & Docker Compose** (Environment setup)
@@ -63,12 +63,10 @@ flowchart LR
 ├── README.md
 ├── datasets/
 ├── notebooks/
-│   ├── 01_exploracao_dados.ipynb
-│   ├── 02_limpeza_tratamento.ipynb
-│   ├── 03_integracao_feature_engineering.ipynb
-│   ├── 04_modelagem_regressao_linear.ipynb
-│   └── 05_exportacao_dw_postgresql.ipynb
+│   └── 01_machine_learning_baseline.ipynb
 ├── postgres-init/
+│   ├── 01-create_and_populate_raw.sql
+│   └── 02-create_and_populate_dw.sql
 ├── metabase-data/
 ├── docs/
 └── src/
@@ -156,8 +154,7 @@ $$
 PostgreSQL is used to organize the analytical pipeline into schemas:
 
 * `raw`: raw or nearly raw datasets
-* `staging`: cleaned and standardized datasets
-* `dw`: dimensional model with facts and dimensions
+* `dw`: cleaned, standardized, and integrated dimensional model with facts and dimensions
 * `datamart_seguranca_publica`: analytical views for BI
 
 ---

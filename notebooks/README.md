@@ -1,32 +1,23 @@
 # notebooks
 
-Fluxo sugerido para o projeto:
+Fluxo atual do projeto:
 
-1. `01_exploracao_dados.ipynb`
-2. `02_limpeza_tratamento.ipynb`
-3. `03_integracao_feature_engineering.ipynb`
-4. `04_modelagem_regressao_linear.ipynb`
-5. `05_exportacao_dw_postgresql.ipynb`
+1. `01_machine_learning_baseline.ipynb`
 
 Objetivo:
 
-- explorar os arquivos brutos
-- limpar e padronizar as bases
-- integrar os datasets por `codigo_municipio + ano`
-- gerar features
-- treinar o baseline de regressao linear
-- salvar os resultados no PostgreSQL
-- criar dados preparados para o Data Warehouse e Data Mart
+- consumir dados tratados e integrados do schema `dw`
+- preparar a base para modelagem
+- treinar o primeiro baseline de regressao linear
+- avaliar metricas como MAE, RMSE e R2
+- futuramente salvar previsoes/resultados para consumo no BI
 
-Organizacao dos notebooks:
+Decisao de arquitetura:
 
-- cada notebook e organizado por fonte de dados
-- cada fonte deve gerar um dataframe tratado proprio
-- a integracao entre fontes acontece apenas no notebook 03
+- limpeza, padronizacao e integracao acontecem no PostgreSQL
+- o Jupyter fica reservado para Machine Learning e analises experimentais
+- a fonte oficial dos dados tratados e o Data Warehouse
 
-Fontes previstas:
+Fonte principal:
 
-- IDH
-- crimes
-- populacao
-- educacao
+- `dw.fato_municipio_ano`
