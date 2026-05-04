@@ -7,7 +7,7 @@ O objetivo do Data Warehouse e apoiar analises sobre seguranca publica no Brasil
 - criminalidade
 - populacao
 - IDHM
-- educacao / IDEB
+- educacao (IDEB)
 
 ## 1. Desenho Geral
 

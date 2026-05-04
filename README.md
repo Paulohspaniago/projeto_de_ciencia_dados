@@ -77,10 +77,10 @@ flowchart LR
 
 ## 📊 Fontes de Dados
 
-* Dados de Segurança Pública (criminalidade)
-* Dados de IDH/IDHM
-* Dados populacionais
-* Dados educacionais do Ministério da Educação / INEP / IBGE
+* Dados de Segurança Pública (criminalidade) - https://forumseguranca.org.br/publicacoes/anuario-brasileiro-de-seguranca-publica/
+* Dados de IDHM - http://www.atlasbrasil.org.br/consulta/planilha
+* Dados populacionais - https://basedosdados.org/dataset/1e2b9a88-9dc7-4f0e-a3a5-e8d2a13869bf?table=1a8d9636-c11d-443b-ae83-1b00576f0b70
+* Dados educacionais do Ministério da Educação - https://qedu.org.br/brasil/baixar-dados?7&brasil
 
 ---
 
@@ -233,8 +233,8 @@ Este projeto é destinado a fins educacionais e de pesquisa.
 
 ---
 
-## 👤 Autor
+## 👤 Autores
 
-Paulo Paniago 
-Marcelo Kobayashi
-Dimitri Cinnanti
+* Paulo Paniago 
+* Marcelo Kobayashi
+* Dimitri Cinnanti
